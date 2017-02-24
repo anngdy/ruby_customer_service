@@ -1,0 +1,12 @@
+%h2 Log in
+= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+  .field
+    %br/
+    = f.email_field :email, autofocus: true, placeholder: 'email *'
+  .field
+    %br/
+    = f.password_field :password, autocomplete: "off", placeholder: 'password *'
+  .actions
+    %button.button.button-block SIGN IN
+  = render "devise/shared/links"
+

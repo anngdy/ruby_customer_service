@@ -1,0 +1,4 @@
+-if @errors.blank?
+  window.location.reload();
+-else
+  $('#show_errors').html("#{escape_javascript(render partial: "layouts/errors", locals: {errors: @errors})}");

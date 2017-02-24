@@ -1,0 +1,266 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+body {
+  background-color: #ebebeb;
+  font-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Titillium Web', sans-serif;
+}
+
+h2 { 
+  color: #214b3e; 
+  text-align: center;
+  font-weight: normal; 
+  font-size: 42px;
+  text-transform: uppercase; 
+  font-family: 'Titillium Web', sans-serif; 
+}
+
+th {
+  color: #207b7b;
+  font-family: 'Titillium Web', sans-serif ;
+  font-size: 14px;
+  line-height: 18px;  
+}
+
+p, ol, ul, td {
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 11px;
+  line-height: 18px;
+  color: #2f2f2f; 
+}
+
+.btn-sm {
+  font-family: 'Titillium Web', sans-serif;
+
+  &:hover {
+    color: #207b7b;
+    background-color: #f0f0f0;
+  }
+}
+
+.waiting-modal {
+  font-family: 'Titillium Web', sans-serif;
+  color: #2f2f2f;
+  font-size: 11px;
+  text-transform: uppercase;
+
+  .modal-title {
+    font-size: 20px;
+    color: #207b7b; 
+  }
+}
+div {
+  &.field, &.actions {
+    margin-bottom: 10px;
+  }
+}ess
+
+#notice {
+  color: green;
+}
+
+.field_with_errors {
+  padding: 2px;
+}
+
+#error_explanation {
+  width: 100%;
+  border-radius: 2px;
+  border: 2px solid #EE3B3B;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  color: #a0b3b0;
+  background: #f2dede;
+}
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #EE3B3B;
+  color: #fff;
+}
+
+#error_explanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+.w {
+  width: 120px;
+}
+
+dl {
+  margin-bottom: 0px;
+}
+
+.dl-horizontal dt {
+  width: 118px;
+}
+
+.dl-horizontal dd {
+  margin-left: 130px;
+}
+
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+ }
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+ }
+
+a {
+  text-decoration: none;
+  color: #1ab188;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+a:hover {
+  color: #179b77;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 300;
+  margin: 0 0 40px;
+}
+
+#new_user{
+  background: #172b39;
+  padding: 35px;
+  max-width: 650px;
+  margin: 40px auto;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+input, textarea {
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  padding: 5px 10px;
+  background: none;
+  background-image: none;
+  border: 1px solid #a0b3b0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: block;
+  color: #ffffff;
+  border-radius: 0;
+  -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+  transition: border-color .25s ease, box-shadow .25s ease;
+}
+::-webkit-input-placeholder { 
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
+}
+input:focus, textarea:focus {
+  outline: 0;
+  border-color: #1ab188;
+}
+
+textarea {
+  border: 2px solid #a0b3b0;
+  resize: vertical;
+}
+
+.field-wrap {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.top-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.top-row > div {
+  float: left;
+  width: 48%;
+  margin-right: 4%;
+}
+.top-row > div:last-child {
+  margin: 0;
+}
+
+.button {
+  border: 0;
+  outline: none;
+  border-radius: 0;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  background: #1ab188;
+  color: #ffffff;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-appearance: none;
+}
+.button:hover, .button:focus {
+  background: #128767;
+}
+
+.button-block {
+  display: block;
+  width: 100%;
+}
+
+.forgot {
+  margin-top: -20px;
+  text-align: right;
+}
